@@ -7,7 +7,7 @@
 @theme {
   --color-primary: #000000;
   --color-secondary: #ffffff;
-  --color-accent: #E3D61D;
+  --color-accent: #e3d61d;
   --color-shadow: #e3d61d66;
 }
 
@@ -43,14 +43,14 @@ body {
   height: 100%;
 }
 
-.navbar-link {
+.navbar-link-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
-.edit-button {
+.button-text {
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;

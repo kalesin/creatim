@@ -6,7 +6,7 @@ export interface Person {
   skin_color: string;
   eye_color: string;
   birth_year: string;
-  gender: 'male' | 'female' | 'n/a' | 'hermaphrodite' | string; // SWAPI's known values
+  gender: string;
   homeworld: string; // URL
   films: string[]; // Array of URLs
   species: string[]; // Array of URLs
@@ -15,6 +15,8 @@ export interface Person {
   created: string; // ISO 8601 date format
   edited: string; // ISO 8601 date format
   url: string; // Unique resource URL
+  id?: string;
+  image?: string;
 }
 
 export interface PeopleApiResponse {
@@ -22,4 +24,16 @@ export interface PeopleApiResponse {
   previous: string | null;
   next: string | null;
   results: Person[];
+}
+
+export interface DisplayedIds {
+  left: string;
+  middle: string;
+  right: string;
+}
+
+export interface DisplayedPeople {
+  left: Person | null;
+  middle: Person | null;
+  right: Person | null;
 }

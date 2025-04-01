@@ -31,9 +31,3 @@ export interface DisplayedIds {
   middle: string;
   right: string;
 }
-
-export interface DisplayedPeople {
-  left: Person | null;
-  middle: Person | null;
-  right: Person | null;
-}

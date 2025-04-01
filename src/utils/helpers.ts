@@ -18,3 +18,12 @@ export function extractIdFromUrl(url: string): string {
   const parts = trimmedUrl.split('/');
   return parts.pop() || ''; // Safely get the last part
 }
+
+export function deepClone<T>(obj: T): T {
+  try {
+    return JSON.parse(JSON.stringify(obj));
+  } catch {
+    console.warn('Deep clone failed, falling back to shallow copy');
+    return { ...obj };
+  }
+};

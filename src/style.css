@@ -62,6 +62,10 @@ body {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-text-bolded {
@@ -69,6 +73,10 @@ body {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-list-shadow {
